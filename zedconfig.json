@@ -1,0 +1,54 @@
+{
+  "active_pane_modifiers": {
+    "magnification": 1.0
+  },
+  "chat_panel": {
+    "button": "always"
+  },
+  "base_keymap": "VSCode",
+  "buffer_font_family": "Droid Sans Mono",
+  "buffer_font_size": 13,
+  "buffer_font_weight": null,
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "languages": {
+    "Rust": {
+      "tab_size": 2
+    },
+    "C++": {
+      "formatter": "auto"
+    },
+    "Svelte": {
+      "formatter": "auto"
+    },
+    "Python": {
+      "tab_size": 2,
+      "formatter": null
+    },
+    "HTML": {
+      "formatter": "language_server"
+    }
+  },
+  "lsp": {
+    "wakatime": {
+      "initialization_options": {
+        "api-key": "-",
+        "api-url": "https://hackatime.hackclub.com/api/hackatime/v1"
+      }
+    }
+  },
+  "minimap": {
+    "show": "never",
+    "thumb": "always"
+  },
+  "project_panel": {
+    "auto_fold_dirs": false
+  },
+  "tab_size": 2,
+  "theme": {
+    "mode": "system",
+    "light": "GitHub Dark Default",
+    "dark": "GitHub Dark Default"
+  },
+  "ui_font_size": 16,
+  "vim_mode": false
+}
