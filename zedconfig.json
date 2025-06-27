@@ -2,14 +2,23 @@
   "active_pane_modifiers": {
     "magnification": 1.0
   },
-  "chat_panel": {
-    "button": "always"
-  },
   "base_keymap": "VSCode",
   "buffer_font_family": "Droid Sans Mono",
   "buffer_font_size": 13,
   "buffer_font_weight": null,
+  "centered_layout": {
+    "left_padding": 0.2,
+    "right_padding": 0.2
+  },
+  "chat_panel": {
+    "button": "always"
+  },
+  "cursor_shape": "bar",
   "icon_theme": "Colored Zed Icons Theme Dark",
+  "indent_guides": {
+    "background_coloring": "disabled",
+    "coloring": "indent_aware"
+  },
   "languages": {
     "Rust": {
       "tab_size": 2
@@ -29,6 +38,12 @@
     }
   },
   "lsp": {
+    "tinymist": {
+      "settings": {
+        "exportPdf": "onSave",
+        "outputPath": "$root/$name"
+      }
+    },
     "wakatime": {
       "initialization_options": {
         "api-key": "-",
