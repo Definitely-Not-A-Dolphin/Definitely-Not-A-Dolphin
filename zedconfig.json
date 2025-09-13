@@ -1,7 +1,5 @@
 {
-  "active_pane_modifiers": {
-    "magnification": 1.0
-  },
+  "active_pane_modifiers": {},
   "base_keymap": "VSCode",
   "buffer_font_family": "Droid Sans Mono",
   "buffer_font_size": 13,
@@ -14,40 +12,88 @@
     "button": "always"
   },
   "cursor_shape": "bar",
+  "format_on_save": "off",
   "icon_theme": "Colored Zed Icons Theme Dark",
   "indent_guides": {
     "background_coloring": "disabled",
     "coloring": "indent_aware"
   },
   "languages": {
-    "Rust": {
-      "tab_size": 2
-    },
     "C++": {
       "formatter": "auto"
     },
-    "Svelte": {
-      "formatter": "auto"
+    "CSharp": {
+      "tab_size": 2,
+      "indent_guides": null
+    },
+    "HTML": {
+      "formatter": "language_server"
+    },
+    "JavaScript": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
     },
     "Python": {
       "tab_size": 2,
       "formatter": null
     },
-    "HTML": {
+    "Rust": {
+      "tab_size": 2
+    },
+    "Shell Script": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "shfmt",
+          "arguments": ["--filename", "{buffer_path}", "--indent", "2"]
+        }
+      }
+    },
+    "Svelte": {
+      "formatter": "auto"
+    },
+    "TSX": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
+    },
+    "TypeScript": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
       "formatter": "language_server"
     }
   },
   "lsp": {
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": true
+        }
+      }
+    },
+    "omnisharp": {
+      "binary": {
+        "path": "/path/to/OmniSharp",
+        "arguments": ["optional", "additional", "args", "-lsp"]
+      }
+    },
     "tinymist": {
       "settings": {
         "exportPdf": "onSave",
         "outputPath": "$root/$name"
-      }
-    },
-    "wakatime": {
-      "initialization_options": {
-        "api-key": "-",
-        "api-url": "https://hackatime.hackclub.com/api/hackatime/v1"
       }
     }
   },
