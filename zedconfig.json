@@ -4,6 +4,9 @@
   "buffer_font_family": "Droid Sans Mono",
   "buffer_font_size": 13,
   "buffer_font_weight": null,
+  "calls": {
+    "mute_on_join": true
+  },
   "centered_layout": {
     "left_padding": 0.2,
     "right_padding": 0.2
@@ -12,6 +15,7 @@
     "button": "always"
   },
   "cursor_shape": "bar",
+  "disable_ai": true,
   "format_on_save": "off",
   "icon_theme": "Colored Zed Icons Theme Dark",
   "indent_guides": {
@@ -93,7 +97,7 @@
     "tinymist": {
       "settings": {
         "exportPdf": "onSave",
-        "outputPath": "$root/$name"
+        "outputPath": "$root/output/$name"
       }
     }
   },
@@ -103,6 +107,10 @@
   },
   "project_panel": {
     "auto_fold_dirs": false
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
   },
   "tab_size": 2,
   "theme": {
