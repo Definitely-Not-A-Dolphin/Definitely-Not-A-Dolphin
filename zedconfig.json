@@ -1,6 +1,7 @@
 {
-  "active_pane_modifiers": {},
+  "auto_update": true,
   "base_keymap": "VSCode",
+  "bottom_dock_layout": "contained",
   "buffer_font_family": "Droid Sans Mono",
   "buffer_font_size": 13,
   "buffer_font_weight": null,
@@ -11,9 +12,6 @@
     "left_padding": 0.2,
     "right_padding": 0.2
   },
-  "chat_panel": {
-    "button": "always"
-  },
   "cursor_shape": "bar",
   "disable_ai": true,
   "format_on_save": "off",
@@ -21,6 +19,13 @@
   "indent_guides": {
     "background_coloring": "disabled",
     "coloring": "indent_aware"
+  },
+  "gutter": {
+    "breakpoints": true,
+    "folds": true,
+    "line_numbers": true,
+    "min_line_number_digits": 4,
+    "runnables": true
   },
   "languages": {
     "C++": {
@@ -41,6 +46,9 @@
         "!eslint"
       ],
       "formatter": "language_server"
+    },
+    "Markdown": {
+      "format_on_save": "on"
     },
     "Python": {
       "tab_size": 2,
@@ -101,18 +109,23 @@
       }
     }
   },
+  "middle_click_paste": true,
   "minimap": {
-    "show": "never",
+    "show": "auto",
     "thumb": "always"
   },
   "project_panel": {
     "auto_fold_dirs": false
   },
   "tabs": {
+    "show_diagnostics": "all",
     "file_icons": true,
     "git_status": true
   },
   "tab_size": 2,
+  "terminal": {
+    "line_height": "comfortable"
+  },
   "theme": {
     "mode": "system",
     "light": "GitHub Dark Default",
