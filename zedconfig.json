@@ -1,3 +1,11 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
 {
   "auto_update": true,
   "base_keymap": "VSCode",
@@ -8,9 +16,8 @@
   "calls": {
     "mute_on_join": true
   },
-  "centered_layout": {
-    "left_padding": 0.2,
-    "right_padding": 0.2
+  "completions": {
+    "lsp": true
   },
   "cursor_shape": "bar",
   "disable_ai": true,
@@ -28,12 +35,14 @@
     "runnables": true
   },
   "languages": {
+    "CSharp": {
+      "language_servers": []
+    },
     "C++": {
       "formatter": "auto"
     },
-    "CSharp": {
-      "tab_size": 2,
-      "indent_guides": null
+    "EJS": {
+      "formatter": "language_server"
     },
     "HTML": {
       "formatter": "language_server"
@@ -52,7 +61,7 @@
     },
     "Python": {
       "tab_size": 2,
-      "formatter": null
+      "formatter": "prettier"
     },
     "Rust": {
       "tab_size": 2
@@ -96,12 +105,6 @@
         }
       }
     },
-    "omnisharp": {
-      "binary": {
-        "path": "/path/to/OmniSharp",
-        "arguments": ["optional", "additional", "args", "-lsp"]
-      }
-    },
     "tinymist": {
       "settings": {
         "exportPdf": "onSave",
@@ -120,7 +123,8 @@
   "tabs": {
     "show_diagnostics": "all",
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
+    "show_close_button": null
   },
   "tab_size": 2,
   "terminal": {
@@ -130,6 +134,11 @@
     "mode": "system",
     "light": "GitHub Dark Default",
     "dark": "GitHub Dark Default"
+    // Other good ones
+    // - Github Dark Default
+    // - Tokyo Night
+    // - Tokyo Night Moon
+    // - Tokyo Night Storm
   },
   "ui_font_size": 16,
   "vim_mode": false

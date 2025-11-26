@@ -1,6 +1,7 @@
 What am I doing here? I am a math nerd, not computer nerd. My friends indoctrinated me into coding and I do not know whether I like it or not.
 
 I "know" a few programming languages:
+
 - Python (never again)
 - Javascript / TypeScript
 - Rust (learning)
