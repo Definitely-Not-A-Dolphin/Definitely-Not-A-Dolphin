@@ -10,8 +10,8 @@
   "auto_update": true,
   "base_keymap": "VSCode",
   "bottom_dock_layout": "contained",
-  "buffer_font_family": "Droid Sans Mono",
-  "buffer_font_size": 13,
+  "buffer_font_family": ".ZedMono",
+  "buffer_font_size": 14,
   "buffer_font_weight": null,
   "calls": {
     "mute_on_join": true
@@ -21,6 +21,12 @@
   },
   "cursor_shape": "bar",
   "disable_ai": true,
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": false
+    }
+  },
   "format_on_save": "off",
   "icon_theme": "Colored Zed Icons Theme Dark",
   "indent_guides": {
@@ -42,7 +48,7 @@
       "formatter": "language_server"
     },
     "HTML": {
-      "formatter": "language_server"
+      "language_servers": ["auto"]
     },
     "JavaScript": {
       "language_servers": [
@@ -58,10 +64,11 @@
     },
     "Python": {
       "tab_size": 2,
-      "formatter": "prettier"
+      "formatter": "language_server"
     },
     "Rust": {
       "tab_size": 2
+      //"formatter": "language_server"
     },
     "Shell Script": {
       "format_on_save": "on",
@@ -93,6 +100,16 @@
       ],
       "formatter": "language_server"
     }
+    /*
+    "Vue.js": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
+    }*/
   },
   "lsp": {
     "discord_presence": {
@@ -101,19 +118,12 @@
         "base_icons_url": "https://raw.githubusercontent.com/xhyrom/zed-discord-presence/main/assets/icons/",
         "state": "Working on {filename}",
         "details": "In {workspace}",
-        // URL for the large image
-        "large_image": "{base_icons_url}/{language:lo}.png", // :lo lowercase the language name
-        "large_text": "{language:u}", // :u capitalizes the first letter
-        // URL for the small image
+        "large_image": "{base_icons_url}/{language:lo}.png",
+        "large_text": "{language:u}",
         "small_image": "{base_icons_url}/zed.png",
         "small_text": "Zed",
-        // Idle settings - when you're inactive
         "idle": {
-          "timeout": 300, // Idle timeout in seconds (300 seconds = 5 minutes)
-
-          // Action to take when idle
-          // `change_activity` - changes the activity to idle with the following details
-          // `clear_activity` - clears the activity (hides it)
+          "timeout": 300,
           "action": "change_activity",
 
           "state": "Idling",
@@ -131,6 +141,10 @@
           "rust": {
             "state": "Rusting on {filename}",
             "details": "Rustacean at work"
+          },
+          "typescript": {
+            "state": "Typing on {filename}",
+            "details": "Typing my script"
           }
         }
       }
@@ -147,6 +161,16 @@
         "exportPdf": "onSave",
         "outputPath": "$root/output/$name"
       }
+    },
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      }
+    },
+    "vue-language-server": {
+      "enable_lsp_tasks": true
     }
   },
   "middle_click_paste": true,
