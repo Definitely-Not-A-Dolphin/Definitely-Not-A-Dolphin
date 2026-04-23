@@ -7,67 +7,81 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "auto_update": true,
   "base_keymap": "VSCode",
   "bottom_dock_layout": "contained",
-  "buffer_font_family": ".ZedMono",
+  "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 14,
   "buffer_font_weight": null,
   "calls": {
-    "mute_on_join": true
+    "mute_on_join": true,
   },
   "completions": {
-    "lsp": true
+    "lsp": true,
   },
   "cursor_shape": "bar",
   "disable_ai": true,
   "diagnostics": {
     "include_warnings": true,
     "inline": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "format_on_save": "off",
   "icon_theme": "Colored Zed Icons Theme Dark",
   "indent_guides": {
     "background_coloring": "disabled",
-    "coloring": "indent_aware"
+    "coloring": "indent_aware",
   },
   "gutter": {
     "breakpoints": true,
     "folds": true,
     "line_numbers": true,
     "min_line_number_digits": 4,
-    "runnables": true
+    "runnables": true,
   },
   "languages": {
     "C++": {
-      "formatter": "auto"
+      "formatter": "auto",
     },
     "EJS": {
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "HTML": {
-      "language_servers": ["auto"]
+      "language_servers": ["auto"],
     },
     "JavaScript": {
       "language_servers": [
         "deno",
         "!typescript-language-server",
         "!vtsls",
-        "!eslint"
+        "!eslint",
       ],
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "Markdown": {
-      "format_on_save": "on"
+      "format_on_save": "off",
     },
     "Python": {
       "tab_size": 2,
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "Rust": {
-      "tab_size": 2
+      "tab_size": 2,
       //"formatter": "language_server"
     },
     "Shell Script": {
@@ -75,41 +89,33 @@
       "formatter": {
         "external": {
           "command": "shfmt",
-          "arguments": ["--filename", "{buffer_path}", "--indent", "2"]
-        }
-      }
+        },
+      },
     },
     "Svelte": {
-      "formatter": "auto"
+      "formatter": "auto",
     },
     "TSX": {
       "language_servers": [
         "deno",
         "!typescript-language-server",
         "!vtsls",
-        "!eslint"
+        "!eslint",
       ],
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "TypeScript": {
       "language_servers": [
         "deno",
         "!typescript-language-server",
         "!vtsls",
-        "!eslint"
+        "!eslint",
       ],
-      "formatter": "language_server"
-    }
-    /*
-    "Vue.js": {
-      "language_servers": [
-        "deno",
-        "!typescript-language-server",
-        "!vtsls",
-        "!eslint"
-      ],
-      "formatter": "language_server"
-    }*/
+      "formatter": "language_server",
+    },
+    "Typst": {
+      "soft_wrap": "editor_width",
+    },
   },
   "lsp": {
     "discord_presence": {
@@ -131,70 +137,67 @@
           "large_image": "{base_icons_url}/zed.png",
           "large_text": "Zed",
           "small_image": "{base_icons_url}/idle.png",
-          "small_text": "Idle"
+          "small_text": "Idle",
         },
         "git_integration": true,
         "languages": {
           "python": {
-            "details": "I am being forced to write python help me pls"
+            "details": "I am being forced to write python help me pls",
           },
           "rust": {
             "state": "Rusting on {filename}",
-            "details": "Rustacean at work"
+            "details": "Rustacean at work",
           },
           "typescript": {
             "state": "Typing on {filename}",
-            "details": "Typing my script"
-          }
-        }
-      }
+            "details": "Typing my script",
+          },
+        },
+      },
     },
     "deno": {
       "settings": {
         "deno": {
-          "enable": true
-        }
-      }
+          "enable": true,
+        },
+      },
     },
     "tinymist": {
       "settings": {
-        "exportPdf": "onSave",
-        "outputPath": "$root/output/$name"
-      }
+        "outputPath": "$root/output/$name",
+      },
     },
     "rust-analyzer": {
       "initialization_options": {
         "check": {
-          "command": "clippy"
-        }
-      }
+          "command": "clippy",
+        },
+      },
     },
-    "vue-language-server": {
-      "enable_lsp_tasks": true
-    }
   },
   "middle_click_paste": true,
   "minimap": {
     "show": "auto",
-    "thumb": "always"
+    "thumb": "always",
   },
   "project_panel": {
-    "auto_fold_dirs": false
+    "dock": "left",
+    "auto_fold_dirs": false,
   },
   "tabs": {
     "show_diagnostics": "all",
     "file_icons": true,
     "git_status": true,
-    "show_close_button": null
+    "show_close_button": null,
   },
   "tab_size": 2,
   "terminal": {
-    "line_height": "comfortable"
+    "line_height": "comfortable",
   },
   "theme": {
-    "mode": "system",
-    "light": "GitHub Dark Default",
-    "dark": "GitHub Dark Default"
+    "mode": "dark",
+    "light": "Tokyo Night Light",
+    "dark": "GitHub Dark Default",
     // Other good ones
     // - Github Dark Default
     // - Tokyo Night
@@ -202,5 +205,5 @@
     // - Tokyo Night Storm
   },
   "ui_font_size": 16,
-  "vim_mode": false
+  "vim_mode": false,
 }
