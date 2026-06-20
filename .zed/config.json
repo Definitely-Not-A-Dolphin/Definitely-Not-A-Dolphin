@@ -7,16 +7,13 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "diff_view_style": "split",
+  "cli_default_open_behavior": "new_window",
   "outline_panel": {
     "dock": "left"
   },
   "collaboration_panel": {
     "dock": "left"
-  },
-  "agent": {
-    "dock": "right",
-    "favorite_models": [],
-    "model_parameters": []
   },
   "git_panel": {
     "dock": "left"
@@ -57,9 +54,6 @@
   "languages": {
     "C++": {
       "formatter": "auto",
-    },
-    "EJS": {
-      "formatter": "language_server",
     },
     "HTML": {
       "language_servers": ["auto"],
