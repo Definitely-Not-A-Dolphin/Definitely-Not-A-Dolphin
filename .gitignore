@@ -1,0 +1,9 @@
+*
+!fish/
+!fish/*
+!hypr/
+!hypr/*
+!zed
+!zed/*
+!README.md
+!.gitignore

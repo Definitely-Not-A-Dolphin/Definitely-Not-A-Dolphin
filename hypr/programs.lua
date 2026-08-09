@@ -3,10 +3,8 @@
 ---------------------
 
 -- Set programs that you use
-local programs = {
-  terminal    = "kitty",
+return {
+  terminal    = "alacritty",
   fileManager = "dolphin",
   menu        = "fuzzel",
 }
-
-return programs
