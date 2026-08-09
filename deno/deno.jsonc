@@ -1,5 +1,5 @@
 {
-  // This is a file where I keep my linting and formatting preferences for deno
+  // This is the file where I keep my linting and formatting preferences for deno
   "lint": {
     "rules": {
       "tags": ["recommended", "jsr"],
