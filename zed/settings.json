@@ -10,13 +10,13 @@
   "diff_view_style": "split",
   "cli_default_open_behavior": "new_window",
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "auto_update": true,
   "base_keymap": "VSCode",
@@ -190,7 +190,7 @@
   },
   "theme": {
     "mode": "dark",
-    "light": "Tokyo Night Light",
+    "light": "GitHub Dark Default",
     "dark": "GitHub Dark Default",
     // Other good ones
     // - Github Dark Default
