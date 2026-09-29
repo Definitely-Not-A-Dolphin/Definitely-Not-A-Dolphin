@@ -4,7 +4,7 @@
 
 -- Set programs that you use
 return {
-  terminal    = "alacritty",
+  terminal = "alacritty",
   fileManager = "dolphin",
-  menu        = "fuzzel",
+  menu = "fuzzel",
 }
