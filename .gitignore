@@ -3,6 +3,7 @@
 !fish/*
 !hypr/
 !hypr/*
+hypr/monitors.lua
 !zed
 !zed/*
 !README.md

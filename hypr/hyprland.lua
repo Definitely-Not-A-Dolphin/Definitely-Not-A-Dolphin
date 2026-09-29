@@ -1,7 +1,7 @@
 require("keybinds")
-require("windows")
-require("screens")
 require("lookfeel")
+require("monitors")
+require("windows")
 
 -------------------
 ---- AUTOSTART ----
