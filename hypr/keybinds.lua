@@ -84,6 +84,7 @@ hl.bind("CTRL + print", hl.dsp.exec_cmd("hyprshot -m region --clipboard-only"));
 hl.bind(mainMod .. "+ H", hl.dsp.exec_cmd("hyprlock"));
 
 -- Opening Configs
+hl.bind(mainMod .. "+ CTRL + C", hl.dsp.exec_cmd("zeditor ~/.config"));
 hl.bind(mainMod .. "+ CTRL + N", hl.dsp.exec_cmd("zeditor ~/nix-flix"));
 hl.bind(mainMod .. "+ CTRL + H", hl.dsp.exec_cmd("zeditor ~/.config/hypr"));
 
